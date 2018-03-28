@@ -1,0 +1,9 @@
+<tr>
+  <td><%= registered_application.name %></td>
+  <td><%= registered_application.URL %></td>
+  <td><%= distance_of_time_in_words(registered_application.created_at, Time.now) %> ago</td>
+  <td align="right">
+    <%= link_to "Delete", registered_application, method: :delete, remote: true, class: "btn btn-xs btn-danger" %>
+    <%= link_to "View", registered_application, class: "btn btn-xs btn-success" %>
+  </td>
+</tr>

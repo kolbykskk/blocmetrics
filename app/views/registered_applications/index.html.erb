@@ -1,0 +1,24 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Registered Applications</li>
+  </ol>
+</nav>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">Registered Applications<%= link_to "New Application", new_registered_application_path, class: "btn btn-xs btn-primary pull-right" %></div>
+      <div class="panel-body">
+        <table class="table table-striped table-hover">
+          <tr>
+            <th>Name</th>
+            <th>URL</th>
+            <th>Registered</th>
+            <th></th>
+          </tr>
+          <%= render @applications %>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<% if @application.errors.any? %>
+<div class="alert alert-danger">
+  <h4><span class="glyphicon glyphicon-exclamation-sign"></span> <%= pluralize(@application.errors.count, "Error") %></h4>
+  <ul>
+    <% @application.errors.each do |attribute, message| %>
+      <li><%= attribute %> <%= message %></li>
+    <% end %>
+  </ul>
+  </div>
+<% end %>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to "Registered Applications", registered_applications_path %></li>
+    <li class="breadcrumb-item active" aria-current="page">New Application</li>
+  </ol>
+</nav>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">Register a New Application</div>
+      <div class="panel-body">
+        <%= render partial: 'registered_applications/form', locals: { application: @application } %>
+      </div>
+    </div>
+  </div>
+</div>

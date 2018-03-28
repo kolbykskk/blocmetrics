@@ -1,0 +1,17 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to "Registered Applications", registered_applications_path %></li>
+    <li class="breadcrumb-item active" aria-current="page"><i><%= @application.name %></i></li>
+  </ol>
+</nav>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="page-header">
+      <h1>
+        <%= @application.name %>
+        <small><%= @application.URL %></small>
+      </h1>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<%= form_for application do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "Enter name of application to register...", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :URL, "URL" %>
+    <%= f.text_field :URL, placeholder: "http://", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Register Application", class: "form-control btn btn-primary" %>
+  </div>
+<% end %>

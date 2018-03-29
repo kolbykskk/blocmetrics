@@ -14,13 +14,21 @@
 </div>
 
 
-<div class="col-md-4 col-md-offset-4">
-  <ul class="list-group">
-    <% @events.each do |event| %>
-      <li class="list-group-item justify-content-between">
-        <%= event[0] %>
-        <span class="badge badge-default badge-pill"><%= @application.events.where(name: event[0]).count %></span>
-      </li>
-    <% end %>
-  </ul>
+  <div class="row">
+      <div class="col-md-4 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">Analytics Pie Chart</div>
+          <div class="panel-body">
+            <%= pie_chart @application.events.group(:name).count, download: true %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">Analytics Line Graph</div>
+          <div class="panel-body">
+            <%= line_chart @application.events.group_by_day(:created_at).count, download: true, xtitle: "Date", ytitle: "Count (all events)" %>
+          </div>
+        </div>
+      </div>
 </div>

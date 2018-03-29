@@ -49,7 +49,11 @@ gem 'devise'
 
 gem 'figaro'
 
-gem "validate_url"
+gem 'validate_url'
+
+gem 'chartkick'
+
+gem 'groupdate'
 
 group :development do
   gem 'listen', '~> 3.0.5'

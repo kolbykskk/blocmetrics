@@ -8,3 +8,4 @@ FactoryBot.define do
     confirmed_at Date.today
   end
 end
+

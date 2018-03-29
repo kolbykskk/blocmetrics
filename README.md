@@ -31,7 +31,7 @@ I created Blocmetrics as part of the [Bloc](bloc.io) full-stack web developer cu
 | As a user, I want to register an application with Blocmetrics for tracking |
 | As a user, I want events associated with registered applications |
 | As a developer, I want to receive incoming events in an API controller |
-| As a user, I want to use JavaScript to capture client-side events in my applicatio |
+| As a user, I want to use JavaScript to capture client-side events in my application |
 | As a user, I want to see a graph of events for each registered applications |
 
 ## Technologies

@@ -31,6 +31,9 @@ Metrics.report = function(eventName){
 *  View a graph of events for each registered application 
 
 ## Technologies
+**CORS** to allow cross-site HTTP requests for the API & **XMLHttpRequest** to make the requests from external applications
 
-**Languages and Frameworks:** Ruby on Rails, Javascript, API(CORS/XMLHttpRequest), Bootstrap
+**Languages and Frameworks:** Ruby, Ruby on Rails, Javascript
+
+**Libraries:** jQuery, Bootstrap
 

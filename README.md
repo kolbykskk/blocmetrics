@@ -4,7 +4,7 @@
 
 ## What is Metrics?
 
-Metrics is an **analytics service** that receives events (button click, page load etc..) that occur on other websites and sort that data into graphs. All a user has to do is create an account, register an application (their website they want to track) and paste a javascript snippet into their website. Data that the user wants to track is then automatically sent over to Metrics and displayed in the form of graphs.
+Metrics is an **analytics service** that receives events (button click, page load etc..) that occur on other websites and sorts that data into graphs. All a user has to do is create an account, register an application (their website they want to track events on) and paste a javascript snippet into their application. Data that the user wants to track is then automatically sent over to Metrics and displayed in graph form.
 
 **Javascript snippet to start tracking events on your website:**
 ```
@@ -27,8 +27,8 @@ Metrics.report = function(eventName){
 * Register an application with Metrics for tracking 
 * Associate events with registered applications 
 * Receive incoming events in an API controller 
-* Use javascript to capture client-side events in an application 
-*  View a graph of events for each registered application 
+* Capture client-side events in an external application 
+* View a graph of events for each registered application 
 
 ## Technologies
 **CORS** to allow cross-site HTTP requests for the API & **XMLHttpRequest** to make the requests from external applications
